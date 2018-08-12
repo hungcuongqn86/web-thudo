@@ -7,8 +7,8 @@
         <div class="col-sm">
             <div id="content" role="main">
                 <header class="mb-4">
-                    <h1 class="category-title">
-                        OPEN JOBS
+                    <h1 class="text-center category-title">
+                        Join our team
                     </h1>
                 </header>
                 <?php get_template_part('loops/single-recruit', get_post_format()); ?>

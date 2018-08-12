@@ -472,6 +472,49 @@ ul.navbar-nav > li.menu-item:hover, ul.navbar-nav > li.show {
     font-size: 14px;
 }
 
+.product-detail .product-detail-task {
+    line-height: 100px;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-detail .product-detail-body {
+    font-family: Arial, Serif, sans-serif;
+    color: rgba(55, 55, 55, 255);
+    margin-top: 60px;
+}
+
+.btn-back-product {
+    display: block;
+    width: 200px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #4c4c4c;
+    border-radius: 15px;
+    text-align: center;
+    margin: 50px 0 30px 80px;
+    text-decoration: none;
+}
+
+.btn-back-product:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-back-product .back-icon {
+    background-image: url(../images/back.png);
+    height: 16px;
+    width: 34px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.product-attr img {
+    width: 20px;
+    height: auto;
+    margin-right: 8px;
+}
+
 /*
 * Partner
  */
@@ -779,10 +822,68 @@ article .new-item-first .info p.excerpt {
     background-color: #f1f1f1;
 }
 
-.recruit-list .recruit-item .right{
+.recruit-list .recruit-item .right {
     text-align: center;
 }
 
+/*
+* Recruit detail
+ */
+.recruit-detail .recruit-detail-header {
+    border-bottom: 3px solid #8e8e8e;
+    line-height: 100px;
+    margin-top: 60px;
+    background-color: #f6f6f6;
+    font-size: 48px;
+    font-family: Serif, sans-serif;
+    text-align: left;
+}
+
+.recruit-detail .recruit-detail-body {
+    font-family: Arial, Serif, sans-serif;
+    color: rgba(55, 55, 55, 255);
+    margin-top: 60px;
+}
+
+.recruit-detail .recruit-detail-title {
+    border-bottom: 1px solid #ddd;
+}
+
+.recruit-detail .recruit-detail-title .certificate {
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    background-image: url(../images/certificate.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.recruit-detail .recruit-detail-title .number {
+    display: inline-block;
+    width: 72px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 28px;
+    color: #848484;
+}
+
+.recruit-detail .recruit-detail-title .recruit-title {
+    line-height: 100px;
+    font-size: 32px;
+}
+
+.appl-box {
+    font-family: 'UTM Neo Sans Intel', Arial, sans-serif;
+}
+
+.btn-apply {
+    display: block;
+    line-height: 50px;
+    width: 150px;
+    background-color: #ff9841;
+    text-align: center;
+    border-radius: 6px;
+}
 /*
 * Footer
  */

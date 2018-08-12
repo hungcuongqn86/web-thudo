@@ -6,37 +6,35 @@ The Single Post
 ?>
 
 <?php if (have_posts()): while (have_posts()): the_post(); ?>
-    <article role="article" id="post_<?php the_ID() ?>" <?php post_class() ?>>
-        <header class="mb-4">
-            <h1>
-                <?php the_title() ?>
-            </h1>
-        </header>
-        <main>
-            <div class="row">
-                <div class="col-6">      <?php
-
-                    the_content();
-                    wp_link_pages();
-                    ?></div>
-                <div class="col-6"><?php the_post_thumbnail(); ?></div>
+    <div class="col-sm product-detail-box">
+        <div class="product-detail">
+            <div class="row product-detail-task">
+                <div class="col-sm">
+                    <a href="javascript:history.back()" class="btn-back-product"><span class="back-icon"></span>SẢN PHẨM KHÁC</a>
+                </div>
             </div>
-
-        </main>
-    </article>
+            <div class="row product-detail-body">
+                <div class="col-sm-2">
+                    <h1 class="text-center product-title">
+                        <?php the_title() ?>
+                    </h1>
+                </div>
+                <div class="col-sm-8">
+                    <?php
+                    the_content();
+                    ?>
+                </div>
+                <div class="col-sm-2 product-attr">
+                    <p><img src="<?php echo get_template_directory_uri(); ?>/theme/images/menu-icon/tag.png"> Mobile Vas</p>
+                    <p><img src="<?php echo get_template_directory_uri(); ?>/theme/images/menu-icon/calendar.png"> Released June, 2014.</p>
+                    <p><img src="<?php echo get_template_directory_uri(); ?>/theme/images/menu-icon/web.png"> www.bidaonline.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
 <?php
 endwhile;
 else :
     get_template_part('loops/404');
 endif;
 ?>
-
-
-<div class="row mt-5 border-top pt-3">
-    <div class="col">
-        <?php previous_post_link('%link', '<i class="fas fa-fw fa-arrow-left"></i> Previous post: ' . '%title'); ?>
-    </div>
-    <div class="col text-right">
-        <?php next_post_link('%link', 'Next post: ' . '%title' . ' <i class="fas fa-fw fa-arrow-right"></i>'); ?>
-    </div>
-</div>
