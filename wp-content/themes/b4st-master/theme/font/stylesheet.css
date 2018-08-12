@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'UTM Neo Sans Intel';
+    src: url('UTMNeoSansIntel-BoldItalic.woff2') format('woff2'),
+        url('UTMNeoSansIntel-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'UTM Neo Sans Intel';
+    src: url('UTMNeoSansIntelBold.woff2') format('woff2'),
+        url('UTMNeoSansIntelBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UTM Neo Sans Intel';
+    src: url('UTMNeoSansIntel-Italic.woff2') format('woff2'),
+        url('UTMNeoSansIntel-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'UTM Neo Sans Intel';
+    src: url('UTMNeoSansIntel.woff2') format('woff2'),
+        url('UTMNeoSansIntel.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
