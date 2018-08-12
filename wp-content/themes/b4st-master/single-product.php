@@ -11,7 +11,7 @@
                         WHAT WE’RE DOING
                     </h1>
                 </header>
-                <?php get_template_part('loops/single-post', get_post_format()); ?>
+                <?php get_template_part('loops/single-product', get_post_format()); ?>
             </div><!-- /#content -->
         </div>
 

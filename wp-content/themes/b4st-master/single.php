@@ -6,7 +6,7 @@
             <div id="content" role="main">
                 <header class="mb-4">
                     <h1 class="text-center category-title">
-                        WHAT WE’RE DOING
+                        Stay up to date with us
                     </h1>
                 </header>
                 <?php get_template_part('loops/single-post', get_post_format()); ?>

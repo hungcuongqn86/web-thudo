@@ -651,6 +651,83 @@ article .new-item-first .info p.excerpt {
     padding: 30px 30px 5px 30px;
     background-color: #fafafa;
 }
+
+/**
+* article-detail
+ */
+
+.article-detail {
+    padding: 0 110px;
+}
+
+.article-detail article {
+    position: relative;
+}
+
+.article-detail .post-date-box {
+    position: absolute;
+    left: -200px;
+    top: 15px;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    background-image: url(../images/bgdot.png);
+    text-align: right;
+    padding: 0 10px;
+}
+
+.article-detail .post-date-box .date-box {
+    margin: auto 0;
+    width: 100%;
+}
+
+.article-detail .post-date-box .date {
+    display: inline-block;
+    font-size: 52px;
+    border-bottom: 1px solid #ccc;
+}
+
+.article-detail .post-date-box .year {
+    display: block;
+    font-size: 22px;
+}
+
+.article-detail img {
+    max-width: 100%;
+}
+
+.article-detail .thumbnail-caption {
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.article-detail header h1 {
+    font-family: Serif, sans-serif;
+    color: rgba(55, 55, 55, 255);
+    font-size: 52px;
+    margin: 30px 0;
+}
+
+.article-detail main {
+    font-family: Arial, Serif, sans-serif;
+    color: rgba(55, 55, 55, 255);
+}
+
+.article-detail .excerpt {
+    margin: 50px 0;
+    font-size: 18px;
+}
+
+.article-detail .content {
+    margin: 60px 0;
+    font-size: 18px;
+}
+
+.related-post-title {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
 /*
 * Footer
  */
