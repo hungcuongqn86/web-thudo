@@ -728,6 +728,61 @@ article .new-item-first .info p.excerpt {
     padding-bottom: 15px;
 }
 
+/**
+* recruit-list
+ */
+.recruit-list .recruit-header {
+    border-bottom: 1px solid #ddd;
+    line-height: 70px;
+}
+
+.recruit-list .recruit-header .left {
+    font-size: 48px;
+    font-family: Serif, sans-serif;
+    text-align: left;
+    padding-left: 125px;
+    background-color: #f6f6f6;
+}
+
+.recruit-list .recruit-header .right {
+    text-align: center;
+    background-color: #e3e3e3;
+}
+
+.recruit-list .recruit-item {
+    border-bottom: 1px solid #ddd;
+    line-height: 70px;
+}
+
+.recruit-list .recruit-item .left .number {
+    display: inline-block;
+    width: 72px;
+    height: 72px;
+    background-color: #f1f1f1;
+    text-align: center;
+    font-size: 28px;
+    color: #848484;
+}
+
+.recruit-list .recruit-item .left a {
+    color: rgba(60, 60, 60, 255);
+    font-size: 24pt;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.recruit-list .recruit-item:hover .left .number, .recruit-list .recruit-item:hover .left a {
+    color: rgba(245, 133, 37, 255);
+}
+
+.recruit-list .recruit-item:hover {
+    background-color: #f1f1f1;
+}
+
+.recruit-list .recruit-item .right{
+    text-align: center;
+}
+
 /*
 * Footer
  */
