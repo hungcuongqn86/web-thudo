@@ -37,7 +37,7 @@ function tao_taxonomy() {
 }
 
 // Hook into the 'init' action
-add_action( 'init', 'tao_taxonomy', 1 );
+add_action( 'init', 'tao_taxonomy', 0 );
 
 // Register Custom Post Type
 function products_post_type() {
@@ -59,7 +59,7 @@ function products_post_type() {
         'show_in_admin_bar'     => true,
         'show_in_nav_menus'     => true,
         'can_export'            => true,
-        'has_archive'           => false,
+        'has_archive'           => true,
         'exclude_from_search'   => false,
         'publicly_queryable'    => true,
         'capability_type'       => 'post',
@@ -67,6 +67,36 @@ function products_post_type() {
     register_post_type( 'product', $args );
 }
 add_action( 'init', 'products_post_type', 0 );
+
+// Register Custom Post Type
+function recruit_post_type() {
+    $label = array(
+        'name' => 'Tuyển dụng', //Tên post type dạng số nhiều
+        'singular_name' => 'Tuyển dụng' //Tên post type dạng số ít
+    );
+    $args = array(
+        'label'                 => __( 'Recruit', 'text_domain' ),
+        'description'           => __( 'Recruit information pages.', 'text_domain' ),
+        'labels'                => $label,
+        'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'custom-fields' ),
+        'taxonomies'            => array( 'category', 'post_tag' ),
+        'hierarchical'          => false,
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'menu_position'         => 5,
+        'show_in_admin_bar'     => true,
+        'show_in_nav_menus'     => true,
+        'can_export'            => true,
+        'has_archive'           => true,
+        'exclude_from_search'   => false,
+        'publicly_queryable'    => true,
+        'capability_type'       => 'post',
+    );
+    register_post_type( 'recruit', $args );
+}
+add_action( 'init', 'recruit_post_type' );
+
 
 add_action('init', function() {
     pll_register_string('contact-us', 'contact us');
