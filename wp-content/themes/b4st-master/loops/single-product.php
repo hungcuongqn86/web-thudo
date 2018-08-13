@@ -15,7 +15,7 @@ The Single Post
             </div>
             <div class="row product-detail-body">
                 <div class="col-sm-2">
-                    <h1 class="text-center product-title">
+                    <h1 class="product-title">
                         <?php the_title() ?>
                     </h1>
                 </div>
@@ -27,7 +27,7 @@ The Single Post
                 <div class="col-sm-2 product-attr">
                     <p><img src="<?php echo get_template_directory_uri(); ?>/theme/images/menu-icon/tag.png"> Mobile Vas</p>
                     <p><img src="<?php echo get_template_directory_uri(); ?>/theme/images/menu-icon/calendar.png"> Released June, 2014.</p>
-                    <p><img src="<?php echo get_template_directory_uri(); ?>/theme/images/menu-icon/web.png"> www.bidaonline.com</p>
+                    <p class="web"><img src="<?php echo get_template_directory_uri(); ?>/theme/images/menu-icon/web.png"> <span class="lik">www.bidaonline.com</span></p>
                 </div>
             </div>
         </div>

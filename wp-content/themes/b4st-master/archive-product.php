@@ -10,13 +10,15 @@ $categories = get_categories($args_list);
 ?>
 <main class="container-fluid">
     <div class="row">
+        <div class="col-sm page-title">
+            <h1 class="text-center">
+                WHAT WE’RE DOING
+            </h1>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-sm">
             <div id="content" role="main">
-                <header class="mb-4">
-                    <h1 class="text-center category-title">
-                        WHAT WE’RE DOING
-                    </h1>
-                </header>
                 <?php
                 foreach ($categories as $value) { ?>
                     <div class="w-100">
@@ -40,7 +42,7 @@ $categories = get_categories($args_list);
                         'order' => 'DESC',
                         'posts_per_page' => 1000
                     ));
-                    wp_get_post_terms( $post_id, $taxonomy, $args );
+                    wp_get_post_terms($post_id, $taxonomy, $args);
 
                     ?>
                     <div class="row">
@@ -49,16 +51,16 @@ $categories = get_categories($args_list);
                                 <div class="category-product">
                                     <div class="category-product-body">
                                         <div class="category-product-body-img">
-                                            <a href="<?php the_permalink() ;?>"><?php the_post_thumbnail("thumbnail",array( "title" => get_the_title(),"alt" => get_the_title() ));?></a>
+                                            <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail("thumbnail", array("title" => get_the_title(), "alt" => get_the_title())); ?></a>
                                         </div>
                                     </div>
                                     <div class="category-product-footer">
                                         <div class="row">
                                             <div class="col-sm-9 left">
-                                                <p><a href="<?php the_permalink() ;?>"><?php the_title() ;?></a></p>
+                                                <p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
                                             </div>
                                             <div class="col-sm-3 right">
-                                                <a class="show-detail" href="<?php the_permalink() ;?>"></a>
+                                                <a class="show-detail" href="<?php the_permalink(); ?>"></a>
                                             </div>
                                         </div>
                                     </div>

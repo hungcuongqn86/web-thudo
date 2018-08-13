@@ -1,13 +1,15 @@
 <?php get_header(); ?>
 <main class="container-fluid">
     <div class="row">
+        <div class="col-sm page-title">
+            <h1 class="text-center">
+                Join our team
+            </h1>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-sm">
             <div id="content" role="main">
-                <header class="mb-4">
-                    <h1 class="text-center category-title">
-                        Join our team
-                    </h1>
-                </header>
                 <?php
                 $product = new WP_Query(array(
                     'post_type' => 'recruit',
