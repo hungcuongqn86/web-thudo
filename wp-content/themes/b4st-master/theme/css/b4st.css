@@ -526,6 +526,7 @@ ul.navbar-nav > li.menu-item:hover, ul.navbar-nav > li.show {
 
 .product-detail-body .product-title {
     margin: 0 15px;
+    text-align: right;
 }
 
 /*
