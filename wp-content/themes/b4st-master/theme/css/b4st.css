@@ -801,6 +801,11 @@ article .new-item-first .info p.excerpt {
 /**
 * recruit-list
  */
+
+.recruit-box {
+    margin-top: 60px;
+}
+
 .recruit-list .recruit-header {
     border-bottom: 1px solid #ddd;
     line-height: 70px;
@@ -832,6 +837,7 @@ article .new-item-first .info p.excerpt {
     text-align: center;
     font-size: 28px;
     color: #848484;
+    margin-left: -15px;
 }
 
 .recruit-list .recruit-item .left a {
