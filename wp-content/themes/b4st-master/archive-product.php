@@ -23,8 +23,10 @@ $categories = get_categories($args_list);
                 foreach ($categories as $value) { ?>
                     <div class="w-100">
                         <div class="row">
-                            <div class="col-sm">
-                                <h2 class="cat-list-title"><span class="cat-dot"></span><?php echo $value->name; ?></h2>
+                            <div class="col-sm cat-list-box">
+                                <h2 class="cat-list-title"><span class="cat-dot"></span><a
+                                            href="<?php echo esc_url(get_category_link($value->cat_ID)); ?>"><?php echo $value->name; ?></a>
+                                </h2>
                             </div>
                         </div>
                     </div>
@@ -42,7 +44,6 @@ $categories = get_categories($args_list);
                         'order' => 'DESC',
                         'posts_per_page' => 1000
                     ));
-                    wp_get_post_terms($post_id, $taxonomy, $args);
 
                     ?>
                     <div class="row">
