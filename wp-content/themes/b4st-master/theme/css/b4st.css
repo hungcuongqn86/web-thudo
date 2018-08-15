@@ -1092,6 +1092,24 @@ footer .footer-bottom .footer-bottom-right ul li img {
         margin: 0;
     }
 
+    .icon-person, .icon-many-people {
+        background-image: none;
+    }
+
+    .dropdown-menu .menu-item {
+        margin: 0;
+        padding: 0;
+    }
+
+    .dropdown-item {
+        margin: 0;
+    }
+
+    .page-title h1 {
+        line-height: 70px;
+        font-size: 1.5rem;
+    }
+
     /*
     * Objectives
      */
