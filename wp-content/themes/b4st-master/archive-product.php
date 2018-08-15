@@ -24,7 +24,7 @@ $categories = get_categories($args_list);
                     <div class="w-100">
                         <div class="row">
                             <div class="col-sm cat-list-box">
-                                <h2 class="cat-list-title"><span class="cat-dot"></span><a
+                                <h2 class="cat-list-title"><span class="cat-dot"></span><a id="bookmark_<?php echo $value->cat_ID; ?>"
                                             href="<?php echo esc_url(get_category_link($value->cat_ID)); ?>"><?php echo $value->name; ?></a>
                                 </h2>
                             </div>

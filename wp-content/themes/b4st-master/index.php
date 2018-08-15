@@ -9,40 +9,30 @@ get_header();
             <ul class="slides">
                 <li>
                     <div class="slides-item">
-                        <img src="/wp-content/uploads/2018/08/Layer-39@1X.png">
-                        <div class="overslide">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/overslide.png">
+                        <img src="/wp-content/uploads/2018/08/slide2.png">
+                        <!--<div class="overslide">
+                            <img src="<?php /*echo get_template_directory_uri(); */?>/theme/images/overslide.png">
                             <p class="caption" style="top: 100px;left: 150px;font-size: 32px;">PARTNERSHIP</p>
                             <p class="caption" style="top: 180px;left: 200px;font-size: 32px;">COLLABORATION</p>
                             <p class="caption" style="top: 260px;left: 250px;font-size: 32px;">TEAMWORK</p>
                             <p class="caption"
                                style="top: 300px;left: 700px;font-size: 48px;font-family: Serif, sans-serif;color: #cbc9c6;">
                                 SUCCESSFUL</p>
-                        </div>
+                        </div>-->
                     </div>
                 </li>
                 <li>
                     <div class="slides-item">
-                        <img style="float: right;"
-                             src="<?php echo get_template_directory_uri(); ?>/theme/images/slide1.png">
-                        <div class="overslide">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/overslide1.png">
+                        <img src="/wp-content/uploads/2018/08/slide1.png">
+                        <!--<div class="overslide">
+                            <img src="<?php /*echo get_template_directory_uri(); */?>/theme/images/overslide1.png">
                             <p class="caption" style="top: 100px;left: 150px;font-size: 32px;">LEADERSHIP</p>
                             <p class="caption" style="top: 180px;left: 200px;font-size: 32px;">PASSIONATE</p>
                             <p class="caption" style="top: 260px;left: 250px;font-size: 32px;">LOYALTY</p>
                             <p class="caption"
                                style="top: 300px;left: 700px;font-size: 48px;font-family: Serif, sans-serif;color: #cbc9c6;">
                                 SHARPENING BUSINESS</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="slides-item">
-                        <img src="/wp-content/uploads/2018/08/Layer-39@1X.png">
-                        <div class="overslide">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/overslide.png">
-                            <p class="caption" style="top: 100px;left: 150px;font-size: 32px;">SLIDE 3</p>
-                        </div>
+                        </div>-->
                     </div>
                 </li>
             </ul>
@@ -107,50 +97,63 @@ get_header();
     </div>
 
     <?php
+    $lang = get_locale();
     $products_ad = array(
         array(
             'name' => 'MOBILE VAS',
             'img' => get_template_directory_uri() . '/theme/images/product-mobile.png',
             'des' => 'Value-added services are supplied either in-house by the mobile network operator themselves',
-            'link' => home_url('/') . 'products/mobile-vas/'
+            'link' => array(
+                'vi' => home_url('/') . 'product/#bookmark_68',
+                'en_US' => home_url('/') . 'product/#bookmark_66',
+            )
         ),
         array(
             'name' => 'OTT TELEVISION',
             'img' => get_template_directory_uri() . '/theme/images/television.png',
             'des' => 'Value-added services are supplied either in-house by the mobile network operator themselves',
-            'link' => home_url('/') . 'products/ott-television/'
+            'link' => array(
+                'vi' => home_url('/') . 'product/#bookmark_80',
+                'en_US' => home_url('/') . 'product/#bookmark_82',
+            )
         ),
         array(
             'name' => 'MOBILE APP',
             'img' => get_template_directory_uri() . '/theme/images/product-mobile.png',
             'des' => 'Value-added services are supplied either in-house by the mobile network operator themselves',
-            'link' => home_url('/') . 'products/mobile-app/'
+            'link' => array(
+                'vi' => home_url('/') . 'product/#bookmark_84',
+                'en_US' => home_url('/') . 'product/#bookmark_86',
+            )
         ),
         array(
             'name' => 'WEB GAMES',
             'img' => get_template_directory_uri() . '/theme/images/game.png',
             'des' => 'Value-added services are supplied either in-house by the mobile network operator themselves',
-            'link' => home_url('/') . 'products/web-game/'
+            'link' => array(
+                'vi' => home_url('/') . 'product/#bookmark_72',
+                'en_US' => home_url('/') . 'product/#bookmark_70',
+            )
         )
     );
     ?>
 
     <div class="row">
         <?php foreach ($products_ad as $value) { ?>
-        <div class="col-sm">
-            <div class="product-item">
-                <a href="<?php echo $value['link']; ?>">
-                    <div class="product-body">
-                        <div class="product-body-img"><img src="<?php echo $value['img']; ?>"></div>
-                        <h3 class="product-title"><?php echo $value['name']; ?></h3>
-                        <p class="product-description"><?php echo $value['des']; ?></p>
-                    </div>
-                    <div class="product-footer">
-                        <p>Read more</p>
-                    </div>
-                </a>
+            <div class="col-sm">
+                <div class="product-item">
+                    <a href="<?php echo $value['link'][$lang]; ?>">
+                        <div class="product-body">
+                            <div class="product-body-img"><img src="<?php echo $value['img']; ?>"></div>
+                            <h3 class="product-title"><?php echo $value['name']; ?></h3>
+                            <p class="product-description"><?php echo $value['des']; ?></p>
+                        </div>
+                        <div class="product-footer">
+                            <p>Read more</p>
+                        </div>
+                    </a>
+                </div>
             </div>
-        </div>
         <?php } ?>
     </div>
 
