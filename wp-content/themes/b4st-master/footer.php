@@ -1,3 +1,6 @@
+<?php
+$lang = get_locale();
+?>
 <footer class="mt-5 bg-light">
     <div class="container-fluid">
         <?php if (is_active_sidebar('footer-widget-area')): ?>
@@ -7,12 +10,8 @@
         <?php endif; ?>
         <div class="row pt-3 footer-bottom">
             <div class="col-sm-8 footer-bottom-left">
-                <div class="div-select">
-                    <select title="Select lang" class="form-control select-lang minimal">
-                        <option value="vi">Tiếng Việt</option>
-                        <option value="en">English</option>
-                    </select>
-                    <span for=""><i class="fas fa-caret-down"></i></span>
+                <div class="div-select-lang">
+                    <ul><?php pll_the_languages();?></ul>
                 </div>
                 <div class="contact">
                     <p>Tầng 10, Tòa Tháp Hoa Kim Cương, Lô C1, Khu Đô Thị</p>
@@ -20,7 +19,8 @@
                     <p>Tel: (+84) 4 3668 7038</p>
                     <p>Email: thudojsc@gviet.vn</p>
                 </div>
-                <p class="copyright"><i class="far fa-copyright"></i> <?php echo date('Y'); ?> by <?php bloginfo('name'); ?>. All rights reserved </p>
+                <p class="copyright"><i class="far fa-copyright"></i> <?php echo date('Y'); ?>
+                    by <?php bloginfo('name'); ?>. All rights reserved </p>
             </div>
             <div class="col-sm-4 footer-bottom-right">
                 <p class="follow">FOLLOW US</p>

@@ -1,9 +1,10 @@
 jQuery(document).ready(function ($) {
     $('.flexslider-slide').flexslider({
-        animation: "slide",
+        animation: "fade",
         controlNav: false,
-        slideshowSpeed: 10000,
-        animationSpeed: 3000
+        slideshow: true,
+        slideshowSpeed: 8000,
+        animationSpeed: 1500
     });
 
     // tiny helper function to add breakpoints
