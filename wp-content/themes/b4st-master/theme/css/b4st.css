@@ -824,7 +824,7 @@ article .new-item-first .info p.excerpt {
 }
 
 .recruit-list .recruit-header {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 3px solid #8e8e8e;
     line-height: 70px;
 }
 
@@ -839,6 +839,20 @@ article .new-item-first .info p.excerpt {
 .recruit-list .recruit-header .right {
     text-align: center;
     background-color: #e3e3e3;
+}
+
+.recruit-list .recruit-header .right:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 15%;
+    height: 100%;
+    transform-origin: bottom left;
+    -ms-transform: skew(30deg, 0deg);
+    -webkit-transform: skew(30deg, 0deg);
+    transform: skew(30deg, 0deg);
+    background-color: #e3e3e3;
+    left: 0px;
 }
 
 .recruit-list .recruit-item {
