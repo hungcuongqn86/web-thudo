@@ -164,90 +164,34 @@ get_header();
                 <ul class="slides">
                     <li>
                         <div class="img-up">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/logofpt.png">
+                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/partner/logofpt.png">
                         </div>
                         <div class="img-dn">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/logofpt.png">
+                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/partner/sctv.png">
                         </div>
                     </li>
                     <li>
                         <div class="img-up">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/vnp.png">
+                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/partner/vinaphone.png">
                         </div>
                         <div class="img-dn">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/logofpt.png">
+                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/partner/mobiFone.png">
                         </div>
                     </li>
                     <li>
                         <div class="img-up">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/vnp.png">
+                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/partner/vietnamobile.png">
                         </div>
                         <div class="img-dn">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/logofpt.png">
+                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/partner/viettel.png">
                         </div>
                     </li>
                     <li>
                         <div class="img-up">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/vnp.png">
+                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/partner/nuance.png">
                         </div>
                         <div class="img-dn">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/logofpt.png">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="img-up">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/logofpt.png">
-                        </div>
-                        <div class="img-dn">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/vnp.png">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="img-up">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/logofpt.png">
-                        </div>
-                        <div class="img-dn">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/vnp.png">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="img-up">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/vnp.png">
-                        </div>
-                        <div class="img-dn">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/logofpt.png">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="img-up">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/logofpt.png">
-                        </div>
-                        <div class="img-dn">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/vnp.png">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="img-up">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/vnp.png">
-                        </div>
-                        <div class="img-dn">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/logofpt.png">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="img-up">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/logofpt.png">
-                        </div>
-                        <div class="img-dn">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/vnp.png">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="img-up">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/vnp.png">
-                        </div>
-                        <div class="img-dn">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/vnp.png">
+                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/partner/Inc.png">
                         </div>
                     </li>
                 </ul>
@@ -259,17 +203,47 @@ get_header();
         </div>
     </div>
 
+    <?php
+    $personal = array(
+        array(
+            'name' => '(Anh) Nguyễn Văn Sao',
+            'pos' => 'Chuyên gia Công nghệ',
+            'img' => get_template_directory_uri() . '/theme/images/personal/sao.jpg',
+            'des' => 'Đôi lúc bạn đối mặt với khó khăn không phải vì bạn làm điều gì đó sai mà bởi vì bạn đang đi đúng hướng'
+        ),
+        array(
+            'name' => '(Anh) Đỗ Nam Nhật ',
+            'pos' => 'Chuyên viên kinh doanh',
+            'img' => get_template_directory_uri() . '/theme/images/personal/nhat.jpg',
+            'des' => 'Động lực là cái để bạn cần để bắt đầu. Còn thói quen sẽ giữ cho bạn đi đúng hướng'
+        ),
+        array(
+            'name' => '(Chị) Thạch Thị Lan Anh ',
+            'pos' => 'Chuyên viên kế toán',
+            'img' => get_template_directory_uri() . '/theme/images/personal/lananh.jpg',
+            'des' => 'Đừng mơ trong cuộc sống…mà hãy sống cho giấc mơ.'
+        ),
+        array(
+            'name' => '(Chị) Nguyễn Hồng Hạnh ',
+            'pos' => 'Trưởng nhóm Marketing',
+            'img' => get_template_directory_uri() . '/theme/images/personal/hanh.jpg',
+            'des' => 'Yêu những việc bạn làm. Cần những gì bạn muốn. Chấp nhận những gì bạn nhận được. Cho đi những gì bạn có thể. Luôn nhớ rằng: gieo nhân nào gặp quả ấy.'
+        ),
+    );
+
+    $randomElement = $personal[array_rand($personal, 1)];
+    ?>
+
     <div class="row personal-box">
         <div class="col-sm-4 personal-img">
-            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/personal.png">
+            <img src="<?php echo $randomElement['img']; ?>">
         </div>
         <div class="col-sm-8 personal-content">
             <span class="quotes d-none d-md-block">“</span>
             <p class="formulation">
-                ...Đây là nơi tôi tìm thấy năng lực của mình, được cống hiến được cộng tác với những đồng nghiệp tuyệt
-                vời, dành cả thanh xuân để làm việc :P
+                ...<?php echo $randomElement['des']; ?> :P
             </p>
-            <p class="personal-name">ĐỨC CƯỜNG - CTO</p>
+            <p class="personal-name"><?php echo $randomElement['name']; ?> - <?php echo $randomElement['pos']; ?></p>
         </div>
     </div>
 </main><!-- /.container -->

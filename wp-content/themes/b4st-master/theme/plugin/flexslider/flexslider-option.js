@@ -10,7 +10,7 @@ jQuery(document).ready(function ($) {
     // tiny helper function to add breakpoints
     function getGridSize() {
         return (window.innerWidth < 600) ? 2 :
-            (window.innerWidth < 900) ? 3 : 6;
+            (window.innerWidth < 900) ? 3 : 4;
     }
 
     $('.carousel-partner').flexslider({

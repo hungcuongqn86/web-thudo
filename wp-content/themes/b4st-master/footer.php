@@ -16,8 +16,8 @@ $lang = get_locale();
                 <div class="contact">
                     <p>Tầng 10, Tòa Tháp Hoa Kim Cương, Lô C1, Khu Đô Thị</p>
                     <p>Trung Hòa - Nhân Chính, Thanh Xuân, Hà Nội</p>
-                    <p>Tel: (+84) 4 3668 7038</p>
-                    <p>Email: thudojsc@gviet.vn</p>
+                    <p><a href="tel:+84436687038">Tel: (+84) 4 3668 7038</a></p>
+                    <p><a href="mailto:thudojsc@gviet.vn">Email: thudojsc@gviet.vn</a></p>
                 </div>
                 <p class="copyright"><i class="far fa-copyright"></i> <?php echo date('Y'); ?>
                     by <?php bloginfo('name'); ?>. All rights reserved </p>

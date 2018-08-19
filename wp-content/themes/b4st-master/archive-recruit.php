@@ -35,11 +35,11 @@
 
                                 <div class="row recruit-item">
                                     <div class="col-sm-9 left">
-                                        <span class="number">01</span>
+                                        <span class="number"><?php echo get_post_meta(get_the_ID(), 'recruit_count', true); ?></span>
                                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                     </div>
                                     <div class="col-sm-3 right">
-                                        <a>2018.09.12</a>
+                                        <a><?php echo get_post_meta(get_the_ID(), 'deadline', true); ?></a>
                                     </div>
                                 </div>
 
