@@ -241,7 +241,7 @@ get_header();
         <div class="col-sm-8 personal-content">
             <span class="quotes d-none d-md-block">“</span>
             <p class="formulation">
-                ...<?php echo $randomElement['des']; ?> :P
+                ...<?php echo $randomElement['des']; ?>
             </p>
             <p class="personal-name"><?php echo $randomElement['name']; ?> - <?php echo $randomElement['pos']; ?></p>
         </div>

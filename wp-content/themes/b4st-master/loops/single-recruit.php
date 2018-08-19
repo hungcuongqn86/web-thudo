@@ -17,7 +17,7 @@ The Single Post
             </div>
             <div class="row recruit-detail-title">
                 <div class="col-sm-1">
-                    <span class="number">01</span>
+                    <span class="number"><?php echo get_post_meta(get_the_ID(), 'recruit_count', true); ?></span>
                 </div>
                 <div class="col-sm-11">
                     <h1 class="recruit-title">
@@ -34,8 +34,9 @@ The Single Post
                     ?>
                 </div>
                 <div class="col-sm-2 appl-box">
-                    <strong>Hạn nộp CV</strong>
-                    <p>2018.09.12</p>
+                    <p><strong>Job ID: MNT2289</strong></p>
+                    <p><strong>Hạn nộp CV</strong></p>
+                    <p><?php echo get_post_meta(get_the_ID(), 'deadline', true); ?></p>
                     <a class="btn-apply">APPLY NOW</a>
                 </div>
             </div>
