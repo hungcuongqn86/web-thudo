@@ -204,47 +204,28 @@ get_header();
     </div>
 
     <?php
-    $personal = array(
-        array(
-            'name' => '(Anh) Nguyễn Văn Sao',
-            'pos' => 'Chuyên gia Công nghệ',
-            'img' => get_template_directory_uri() . '/theme/images/personal/sao.jpg',
-            'des' => 'Đôi lúc bạn đối mặt với khó khăn không phải vì bạn làm điều gì đó sai mà bởi vì bạn đang đi đúng hướng'
-        ),
-        array(
-            'name' => '(Anh) Đỗ Nam Nhật ',
-            'pos' => 'Chuyên viên kinh doanh',
-            'img' => get_template_directory_uri() . '/theme/images/personal/nhat.jpg',
-            'des' => 'Động lực là cái để bạn cần để bắt đầu. Còn thói quen sẽ giữ cho bạn đi đúng hướng'
-        ),
-        array(
-            'name' => '(Chị) Thạch Thị Lan Anh ',
-            'pos' => 'Chuyên viên kế toán',
-            'img' => get_template_directory_uri() . '/theme/images/personal/lananh.jpg',
-            'des' => 'Đừng mơ trong cuộc sống…mà hãy sống cho giấc mơ.'
-        ),
-        array(
-            'name' => '(Chị) Nguyễn Hồng Hạnh ',
-            'pos' => 'Trưởng nhóm Marketing',
-            'img' => get_template_directory_uri() . '/theme/images/personal/hanh.jpg',
-            'des' => 'Yêu những việc bạn làm. Cần những gì bạn muốn. Chấp nhận những gì bạn nhận được. Cho đi những gì bạn có thể. Luôn nhớ rằng: gieo nhân nào gặp quả ấy.'
-        ),
-    );
+    $personal_q = new WP_Query(array(
+        'post_type' => 'Personal',
+        'post_status' => 'publish',
+        'orderby' => 'rand',
+        'posts_per_page' => 1,
+    ));
 
-    $randomElement = $personal[array_rand($personal, 1)];
+    if ($personal_q->have_posts()) {
+        $string = '<div class="row personal-box">';
+        while ($personal_q->have_posts()) {
+            $personal_q->the_post();
+            $string .= '<div class="col-sm-4 personal-img"><img src="'.get_the_post_thumbnail_url().'"></div>';
+            $string .= '<div class="col-sm-8 personal-content">';
+            $string .= '<span class="quotes d-none d-md-block">“</span>';
+            $string .= '<p class="formulation">...' . $personal_q->post->post_content . '</p>';
+            $string .= '<p class="personal-name">' . $personal_q->post->post_title . ' - ' . get_post_meta($personal_q->post->ID, 'position', true) . '</p>';
+            $string .= '</div>';
+        }
+        $string .= '</div>';
+        wp_reset_postdata();
+        echo $string;
+    }
     ?>
-
-    <div class="row personal-box">
-        <div class="col-sm-4 personal-img">
-            <img src="<?php echo $randomElement['img']; ?>">
-        </div>
-        <div class="col-sm-8 personal-content">
-            <span class="quotes d-none d-md-block">“</span>
-            <p class="formulation">
-                ...<?php echo $randomElement['des']; ?>
-            </p>
-            <p class="personal-name"><?php echo $randomElement['name']; ?> - <?php echo $randomElement['pos']; ?></p>
-        </div>
-    </div>
 </main><!-- /.container -->
 <?php get_footer(); ?>

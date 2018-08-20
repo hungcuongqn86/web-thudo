@@ -79,7 +79,7 @@ function recruit_post_type() {
         'description'           => __( 'Recruit information pages.', 'text_domain' ),
         'labels'                => $label,
         'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'custom-fields' ),
-        'taxonomies'            => array( 'category', 'post_tag' ),
+        'taxonomies'            => array( 'post_tag' ),
         'hierarchical'          => false,
         'public'                => true,
         'show_ui'               => true,
@@ -97,6 +97,34 @@ function recruit_post_type() {
 }
 add_action( 'init', 'recruit_post_type' );
 
+// Register Custom Post Type
+function personal_post_type() {
+    $label = array(
+        'name' => 'Cá nhân tiêu biểu', //Tên post type dạng số nhiều
+        'singular_name' => 'Cá nhân tiêu biểu' //Tên post type dạng số ít
+    );
+    $args = array(
+        'label'                 => __( 'Personal', 'text_domain' ),
+        'description'           => __( 'Personal information pages.', 'text_domain' ),
+        'labels'                => $label,
+        'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'custom-fields' ),
+        'taxonomies'            => array(),
+        'hierarchical'          => false,
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'menu_position'         => 5,
+        'show_in_admin_bar'     => true,
+        'show_in_nav_menus'     => true,
+        'can_export'            => true,
+        'has_archive'           => true,
+        'exclude_from_search'   => false,
+        'publicly_queryable'    => true,
+        'capability_type'       => 'post',
+    );
+    register_post_type( 'Personal', $args );
+}
+add_action( 'init', 'personal_post_type' );
 
 add_action('init', function() {
     pll_register_string('contact-us', 'contact us');
