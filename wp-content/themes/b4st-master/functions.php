@@ -78,13 +78,13 @@ function recruit_post_type() {
         'label'                 => __( 'Recruit', 'text_domain' ),
         'description'           => __( 'Recruit information pages.', 'text_domain' ),
         'labels'                => $label,
-        'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'custom-fields' ),
+        'supports'              => array( 'title', 'editor', 'custom-fields' ),
         'taxonomies'            => array( 'post_tag' ),
         'hierarchical'          => false,
         'public'                => true,
         'show_ui'               => true,
         'show_in_menu'          => true,
-        'menu_position'         => 5,
+        'menu_position'         => 6,
         'show_in_admin_bar'     => true,
         'show_in_nav_menus'     => true,
         'can_export'            => true,
@@ -107,13 +107,13 @@ function personal_post_type() {
         'label'                 => __( 'Personal', 'text_domain' ),
         'description'           => __( 'Personal information pages.', 'text_domain' ),
         'labels'                => $label,
-        'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'custom-fields' ),
+        'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
         'taxonomies'            => array(),
         'hierarchical'          => false,
         'public'                => true,
         'show_ui'               => true,
         'show_in_menu'          => true,
-        'menu_position'         => 5,
+        'menu_position'         => 7,
         'show_in_admin_bar'     => true,
         'show_in_nav_menus'     => true,
         'can_export'            => true,
@@ -126,6 +126,37 @@ function personal_post_type() {
 }
 add_action( 'init', 'personal_post_type' );
 
+// Register Custom Post Type
+function partner_post_type() {
+    $label = array(
+        'name' => 'Đối tác', //Tên post type dạng số nhiều
+        'singular_name' => 'Đối tác' //Tên post type dạng số ít
+    );
+    $args = array(
+        'label'                 => __( 'Partner', 'text_domain' ),
+        'description'           => __( 'Partner information pages.', 'text_domain' ),
+        'labels'                => $label,
+        'supports'              => array( 'title', 'thumbnail' ),
+        'taxonomies'            => array(),
+        'hierarchical'          => false,
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'menu_position'         => 8,
+        'show_in_admin_bar'     => true,
+        'show_in_nav_menus'     => true,
+        'can_export'            => true,
+        'has_archive'           => true,
+        'exclude_from_search'   => false,
+        'publicly_queryable'    => true,
+        'capability_type'       => 'post',
+    );
+    register_post_type( 'Partner', $args );
+}
+add_action( 'init', 'partner_post_type' );
+
+
+// Add lang key
 add_action('init', function() {
     pll_register_string('contact-us', 'contact us');
 });

@@ -11,7 +11,7 @@ get_header();
                     <div class="slides-item">
                         <img src="/wp-content/uploads/2018/08/slide2.png">
                         <!--<div class="overslide">
-                            <img src="<?php /*echo get_template_directory_uri(); */?>/theme/images/overslide.png">
+                            <img src="<?php /*echo get_template_directory_uri(); */ ?>/theme/images/overslide.png">
                             <p class="caption" style="top: 100px;left: 150px;font-size: 32px;">PARTNERSHIP</p>
                             <p class="caption" style="top: 180px;left: 200px;font-size: 32px;">COLLABORATION</p>
                             <p class="caption" style="top: 260px;left: 250px;font-size: 32px;">TEAMWORK</p>
@@ -25,7 +25,7 @@ get_header();
                     <div class="slides-item">
                         <img src="/wp-content/uploads/2018/08/slide1.png">
                         <!--<div class="overslide">
-                            <img src="<?php /*echo get_template_directory_uri(); */?>/theme/images/overslide1.png">
+                            <img src="<?php /*echo get_template_directory_uri(); */ ?>/theme/images/overslide1.png">
                             <p class="caption" style="top: 100px;left: 150px;font-size: 32px;">LEADERSHIP</p>
                             <p class="caption" style="top: 180px;left: 200px;font-size: 32px;">PASSIONATE</p>
                             <p class="caption" style="top: 260px;left: 250px;font-size: 32px;">LOYALTY</p>
@@ -157,44 +157,40 @@ get_header();
         <?php } ?>
     </div>
 
+    <?php
+    $partner_q = new WP_Query(array(
+        'post_type' => 'Partner',
+        'post_status' => 'publish',
+        'order' => 'DESC',
+        'posts_per_page' => 1000
+    ));
+
+    if ($partner_q->have_posts()) {
+        $string = '<ul class="slides">';
+        $key = 0;
+        while ($partner_q->have_posts()) {
+            $partner_q->the_post();
+            if ($key == 0) {
+                $string .= '<li><div class="img-up"><img src="'. get_the_post_thumbnail_url() . '"></div>';
+                $key = 1;
+            }else{
+                $string .= '<div class="img-dn"><img src="'. get_the_post_thumbnail_url() . '"></div></li>';
+                $key = 0;
+            }
+        }
+        if($key == 1){
+            $string .= '<div class="img-dn"></div></li>';
+        }
+        $string .= '</ul>';
+        wp_reset_postdata();
+    }
+    ?>
+
     <div class="row">
         <div class="flex-container partner">
             <h2 class="partner-title">WE WORK WITH</h2>
             <div class="flexslider carousel-partner">
-                <ul class="slides">
-                    <li>
-                        <div class="img-up">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/partner/logofpt.png">
-                        </div>
-                        <div class="img-dn">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/partner/sctv.png">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="img-up">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/partner/vinaphone.png">
-                        </div>
-                        <div class="img-dn">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/partner/mobiFone.png">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="img-up">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/partner/vietnamobile.png">
-                        </div>
-                        <div class="img-dn">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/partner/viettel.png">
-                        </div>
-                    </li>
-                    <li>
-                        <div class="img-up">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/partner/nuance.png">
-                        </div>
-                        <div class="img-dn">
-                            <img src="<?php echo get_template_directory_uri(); ?>/theme/images/partner/Inc.png">
-                        </div>
-                    </li>
-                </ul>
+                <?php echo $string; ?>
                 <div class="custom-navigation">
                     <a href="#" class="flex-prev control"><i class="fas fa-angle-left"></i></a>
                     <a href="#" class="flex-next control"><i class="fas fa-angle-right"></i></a>
@@ -215,7 +211,7 @@ get_header();
         $string = '<div class="row personal-box">';
         while ($personal_q->have_posts()) {
             $personal_q->the_post();
-            $string .= '<div class="col-sm-4 personal-img"><img src="'.get_the_post_thumbnail_url().'"></div>';
+            $string .= '<div class="col-sm-4 personal-img"><img src="' . get_the_post_thumbnail_url() . '"></div>';
             $string .= '<div class="col-sm-8 personal-content">';
             $string .= '<span class="quotes d-none d-md-block">“</span>';
             $string .= '<p class="formulation">...' . $personal_q->post->post_content . '</p>';

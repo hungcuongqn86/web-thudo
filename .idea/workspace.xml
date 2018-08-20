@@ -14,8 +14,8 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/b4st-master/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="124" column="33" lean-forward="false" selection-start-line="124" selection-start-column="25" selection-end-line="124" selection-end-column="33" />
+            <state relative-caret-position="323">
+              <caret line="33" column="49" lean-forward="false" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -34,16 +34,16 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/b4st-master/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="213" column="17" lean-forward="false" selection-start-line="213" selection-start-column="9" selection-end-line="213" selection-end-column="17" />
+            <state relative-caret-position="484">
+              <caret line="171" column="20" lean-forward="false" selection-start-line="171" selection-start-column="13" selection-end-line="171" selection-end-column="20" />
               <folding>
-                <marker date="1534778016193" expanded="false" signature="578:617" ph="..." />
-                <marker date="1534778016193" expanded="false" signature="689:728" ph="..." />
-                <marker date="1534778016193" expanded="false" signature="802:841" ph="..." />
-                <marker date="1534778016193" expanded="false" signature="1523:1562" ph="..." />
-                <marker date="1534778016193" expanded="false" signature="1633:1672" ph="..." />
-                <marker date="1534778016193" expanded="false" signature="1743:1782" ph="..." />
-                <marker date="1534778016193" expanded="false" signature="1881:1966" ph="..." />
+                <marker date="1534781315501" expanded="false" signature="579:618" ph="..." />
+                <marker date="1534781315501" expanded="false" signature="690:729" ph="..." />
+                <marker date="1534781315501" expanded="false" signature="803:842" ph="..." />
+                <marker date="1534781315501" expanded="false" signature="1525:1564" ph="..." />
+                <marker date="1534781315501" expanded="false" signature="1635:1674" ph="..." />
+                <marker date="1534781315501" expanded="false" signature="1745:1784" ph="..." />
+                <marker date="1534781315501" expanded="false" signature="1883:1968" ph="..." />
               </folding>
             </state>
           </provider>
@@ -52,8 +52,8 @@
       <file leaf-file-name="archive-recruit.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/b4st-master/archive-recruit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="41" column="99" lean-forward="true" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="99" />
+            <state relative-caret-position="170">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="18" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -294,12 +294,12 @@
       <workItem from="1534432054781" duration="5254000" />
       <workItem from="1534519118651" duration="4626000" />
       <workItem from="1534667498193" duration="7379000" />
-      <workItem from="1534773741347" duration="4394000" />
+      <workItem from="1534773741347" duration="8481000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211645000" />
+    <option name="totallyTimeSpent" value="215732000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -648,14 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/b4st-master/archive-recruit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="41" column="99" lean-forward="true" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/b4st-master/loops/single-recruit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -672,14 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/b4st-master/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="124" column="33" lean-forward="false" selection-start-line="124" selection-start-column="25" selection-end-line="124" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/b4st-master/loops/single-post.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -688,18 +672,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/b4st-master/archive-recruit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="18" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/b4st-master/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="33" column="49" lean-forward="false" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/b4st-master/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="213" column="17" lean-forward="false" selection-start-line="213" selection-start-column="9" selection-end-line="213" selection-end-column="17" />
+        <state relative-caret-position="484">
+          <caret line="171" column="20" lean-forward="false" selection-start-line="171" selection-start-column="13" selection-end-line="171" selection-end-column="20" />
           <folding>
-            <marker date="1534778016193" expanded="false" signature="578:617" ph="..." />
-            <marker date="1534778016193" expanded="false" signature="689:728" ph="..." />
-            <marker date="1534778016193" expanded="false" signature="802:841" ph="..." />
-            <marker date="1534778016193" expanded="false" signature="1523:1562" ph="..." />
-            <marker date="1534778016193" expanded="false" signature="1633:1672" ph="..." />
-            <marker date="1534778016193" expanded="false" signature="1743:1782" ph="..." />
-            <marker date="1534778016193" expanded="false" signature="1881:1966" ph="..." />
+            <marker date="1534781315501" expanded="false" signature="579:618" ph="..." />
+            <marker date="1534781315501" expanded="false" signature="690:729" ph="..." />
+            <marker date="1534781315501" expanded="false" signature="803:842" ph="..." />
+            <marker date="1534781315501" expanded="false" signature="1525:1564" ph="..." />
+            <marker date="1534781315501" expanded="false" signature="1635:1674" ph="..." />
+            <marker date="1534781315501" expanded="false" signature="1745:1784" ph="..." />
+            <marker date="1534781315501" expanded="false" signature="1883:1968" ph="..." />
           </folding>
         </state>
       </provider>
