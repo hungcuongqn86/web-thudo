@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-sm page-title">
             <h1 class="text-center">
-                Join our team
+                Cơ hội việc làm tại Thủ Đô
             </h1>
         </div>
     </div>
@@ -46,8 +46,6 @@
                             <?php endwhile;
                             wp_reset_query(); ?>
                         </div>
-                        <p class="text-right m-4" ><img style="width: 25px; margin-right: 10px;" src="<?php echo get_template_directory_uri(); ?>/theme/images/download.png"><a style="color: rgba(245, 130, 32, 255);    padding: 3px;
-    border-bottom: 1px dotted; cursor: pointer;">Download CV Template</a> </p>
                     </div>
                 </div>
 

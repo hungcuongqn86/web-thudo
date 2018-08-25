@@ -1,5 +1,5 @@
 jQuery(document).ready(function ($) {
-    $('.flexslider-slide').flexslider({
+    $('#home-slide').flexslider({
         animation: "fade",
         controlNav: false,
         slideshow: true,
@@ -22,6 +22,28 @@ jQuery(document).ready(function ($) {
         minItems: getGridSize(), // use function to pull in initial value
         maxItems: getGridSize(), // use function to pull in initial value
         customDirectionNav: $(".custom-navigation a")
+    });
+
+    $('#member-slide').flexslider({
+        animation: "slide",
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel",
+        directionNav: false
+    });
+
+    $('#member-carousel').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 75,
+        itemMargin: 25,
+        asNavFor: '#member-slide',
+        directionNav: false,
+        start: function(){
+            $("#member-carousel").css({"float" : "right"});
+        }
     });
 
     var $window = $(window),

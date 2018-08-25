@@ -14,12 +14,12 @@ The Single Post
                 </div>
             </div>
             <div class="row product-detail-body">
-                <div class="col-sm-2">
+                <div class="col-sm-3">
                     <h1 class="product-title">
                         <?php the_title() ?>
                     </h1>
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-7">
                     <?php
                     the_content();
                     ?>

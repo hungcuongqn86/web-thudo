@@ -5,7 +5,7 @@ get_header();
     <div class="row d-none d-md-block"
     ">
     <div class="flex-container">
-        <div class="flexslider flexslider-slide">
+        <div id="home-slide" class="flexslider flexslider-slide">
             <ul class="slides">
                 <li>
                     <div class="slides-item">

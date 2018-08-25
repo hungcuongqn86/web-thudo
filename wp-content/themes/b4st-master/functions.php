@@ -49,7 +49,7 @@ function products_post_type() {
         'label'                 => __( 'Product', 'text_domain' ),
         'description'           => __( 'Product information pages.', 'text_domain' ),
         'labels'                => $label,
-        'supports'              => array( 'title', 'editor', 'thumbnail', 'comments', 'custom-fields' ),
+        'supports'              => array( 'title', 'excerpt', 'editor', 'thumbnail', 'comments', 'custom-fields' ),
         'taxonomies'            => array( 'products', 'post_tag' ),
         'hierarchical'          => false,
         'public'                => true,

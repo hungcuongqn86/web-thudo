@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-sm page-title">
             <h1 class="text-center">
-                WHAT WE’RE DOING
+                Sản phẩm của chúng tôi
             </h1>
         </div>
     </div>

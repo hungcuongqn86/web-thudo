@@ -12,7 +12,7 @@ $categories = get_categories($args_list);
     <div class="row">
         <div class="col-sm page-title">
             <h1 class="text-center">
-                WHAT WE’RE DOING
+                Sản phẩm của chúng tôi
             </h1>
         </div>
     </div>
@@ -57,11 +57,11 @@ $categories = get_categories($args_list);
                                     </div>
                                     <div class="category-product-footer">
                                         <div class="row">
-                                            <div class="col-sm-9 left">
-                                                <p><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
-                                            </div>
-                                            <div class="col-sm-3 right">
-                                                <a class="show-detail" href="<?php the_permalink(); ?>"></a>
+                                            <div class="col-sm left">
+                                                <p class="title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></p>
+                                                <p class="description">
+                                                <?php echo get_post_field('post_excerpt', $product->post->ID); ?>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
