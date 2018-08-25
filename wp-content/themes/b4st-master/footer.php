@@ -9,7 +9,7 @@ $lang = get_locale();
             </div>
         <?php endif; ?>
         <div class="row pt-3 footer-bottom">
-            <div class="col-sm-8 footer-bottom-left">
+            <div class="col-sm-4 footer-bottom-left">
                 <div class="div-select-lang">
                     <ul><?php pll_the_languages();?></ul>
                 </div>
@@ -30,6 +30,8 @@ $lang = get_locale();
                     <li><img src="<?php echo get_template_directory_uri(); ?>/theme/images/instagram.png"></li>
                 </ul>
                 <p class="online-help">ONLINE HELP</p>
+            </div>
+            <div class="col-sm-4 footer-bottom-right">
             </div>
         </div>
     </div>
