@@ -22,8 +22,8 @@
                     $string = '<div class="row partner-box">';
                     while ($partner_q->have_posts()) {
                         $partner_q->the_post();
-                        $string .= '<div class="col-sm-4 partner-item">';
-                        $string .= '<img src="'. get_the_post_thumbnail_url() . '">';
+                        $string .= '<div class="col-sm-3 partner-item">';
+                        $string .= '<a href="#"><img src="'. get_the_post_thumbnail_url() . '"></a>';
                         $string .= '</div>';
                     }
                     $string .= '</div>';

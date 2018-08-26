@@ -570,15 +570,13 @@ ul.navbar-nav > li.menu-item-has-children:hover, ul.navbar-nav > li.show {
 
 .partner .img-up, .partner .img-dn {
     min-height: 100px;
-    margin: 30px;
     display: flex;
 }
 
 .partner img {
     width: auto !important;
     margin: auto;
-    max-width: 150px;
-    max-height: 100px;
+    max-width: 200px;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     cursor: pointer;
@@ -663,6 +661,9 @@ ul.navbar-nav > li.menu-item-has-children:hover, ul.navbar-nav > li.show {
     font-weight: bold;
 }
 
+.partner-box {
+    background-color: #f3f3f3;
+}
 
 .partner-box .partner-item img{
     max-width: 100%;
@@ -959,6 +960,7 @@ article img {
  */
 .member-list {
     padding: 0 50px;
+    MARGIN-TOP: 60px;
 }
 
 .member-list .member{
