@@ -7,6 +7,8 @@ $args_list = array(
     'echo' => '0',
 );
 $categories = get_categories($args_list);
+
+$subMenu = wp_get_nav_menu_items('product-sub-vi');
 ?>
 <main class="container-fluid">
     <div class="row">
@@ -17,6 +19,16 @@ $categories = get_categories($args_list);
         </div>
     </div>
     <div class="row">
+        <div class="col-sm page-sub-menu">
+            <ul>
+                <?php
+                foreach ($subMenu as $value) { ?>
+                    <li><a href="<?php echo esc_url($value->url); ?>"><?php echo $value->title; ?></a></li>
+                <?php } ?>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-sm">
             <div id="content" role="main">
                 <?php
@@ -24,8 +36,7 @@ $categories = get_categories($args_list);
                     <div class="w-100">
                         <div class="row">
                             <div class="col-sm cat-list-box">
-                                <h2 class="cat-list-title"><span class="cat-dot"></span><a id="bookmark_<?php echo $value->cat_ID; ?>"
-                                            href="<?php echo esc_url(get_category_link($value->cat_ID)); ?>"><?php echo $value->name; ?></a>
+                                <h2 class="cat-list-title"><span class="cat-dot"></span><a id="bookmark_<?php echo $value->cat_ID; ?>"><?php echo $value->name; ?></a>
                                 </h2>
                             </div>
                         </div>

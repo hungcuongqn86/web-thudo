@@ -400,6 +400,51 @@ ul.navbar-nav > li.menu-item-has-children:hover, ul.navbar-nav > li.show {
     color: #ffffff;
 }
 
+/*
+* Sub menu
+ */
+.page-sub-menu {
+    background-color: #333;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.page-sub-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4c4c4c;
+    display: inline-block;
+    margin-top: 3px;
+}
+
+.page-sub-menu ul li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+.page-sub-menu ul li:last-child {
+    border-right: none;
+}
+
+.page-sub-menu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.page-sub-menu ul li a:hover {
+    color: rgba(250, 181, 80, 255);
+}
+
+.page-sub-menu ul li.active a{
+    color: rgba(250, 181, 80, 255);
+}
+
+
 /**
 * Product
  */

@@ -8,6 +8,16 @@
         </div>
     </div>
     <div class="row">
+        <div class="col-sm page-sub-menu">
+            <ul>
+                <li><a href="/lich-su-hinh-thanh">Lịch sử hình thành</a></li>
+                <li><a href="/he-thong-gia-tri">Tầm nhìn – Sứ mệnh – Giá trị cốt lõi</a></li>
+                <li><a href="/partner">Đối tác</a></li>
+                <li class="active"><a href="/personal">Đội ngũ nhân sự</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-sm">
             <div id="content" class="member-list" role="main">
                 <div class="w-100">
